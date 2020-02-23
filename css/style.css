@@ -1,3 +1,118 @@
 body {
     margin: 0;
+    font-family: 'Poppins', serif;
+    color: #707070;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #1F1F1F
+}
+a.see-all {
+    text-decoration: none;
+    color: #FF9D00;
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn-custom {
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    background-color: #000000;
+    padding: 8px 20px 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-custom:hover {
+    color: #000000;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+}
+
+
+
+/* Animation */
+
+@keyframes jumping-text {
+	0% {
+        bottom: 15px;
+	}
+	25% {
+        bottom: -15px;
+	}
+	40% {
+        bottom: 15px;
+	}
+	55% {
+		bottom: -15px;
+	}
+	70% {
+        bottom: 15px;
+	}
+	85% {
+		bottom: -15px;
+	}
+	100% {
+        bottom: 15px;
+    }
+}
+
+/* Navbar Section */
+
+.navbar-section {
+    margin-top: 30px;
+}
+.navbar-section .navbar-nav .nav-item {
+    padding: 0 8px;
+}
+.navbar-section .navbar-nav .nav-item:last-child {
+    padding-right: 0;
+}
+.navbar-section .navbar-nav a {
+    color: #707070;
+    font-weight: 500;
+    font-size: 15px;
+}
+.navbar-section .navbar-nav a:hover {
+    color: #FF9D00;
+}
+
+/* Banner Section */
+
+.banner-section {
+    margin-bottom: 100px;
+}
+.carousel {
+    padding: 0 0 50px 20px;
+    /* z-index: 1; */
+}
+.carousel-indicators .active{
+    background-image: linear-gradient(to right, #FF9C35, #FFD019);
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    height: 7px;
+    width: 30px;
+}
+.carousel-indicators li {
+    background: #A4A3A3;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    width: 12px;
+    height: 7px;
+}
+.carousel-item h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.carousel-item p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    line-height: 1.8em;
+}
+.best-text {
+    position: relative;
+    left: 40px;
+    animation-name: jumping-text;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
 }
