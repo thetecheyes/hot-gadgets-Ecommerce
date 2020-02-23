@@ -147,3 +147,36 @@ a.see-all {
 .smartphone-section .card-body button {
     margin: 10px 0 20px;
 }
+
+/* Laptop Section */
+
+.laptop-section {
+    margin-bottom: 100px;
+}
+.laptop-section .laptop-title {
+    margin-bottom: 20px;
+}
+.laptop-section .card {
+    padding: 20px 20px 0;
+    border-radius: 15px;
+    border: transparent;
+    box-shadow: 0px 5px 30px #00000020;
+    transition: all 0.3s ease;
+}
+.laptop-section .card:hover {
+    box-shadow: 0px 5px 30px #00000050;
+    transform: translate(0px, -3px);
+}
+.laptop-section .card img{
+    margin: 0px auto 20px;
+    width: 70%;
+}
+.laptop-section .card img:hover{
+    cursor: pointer;
+}
+.laptop-section .card-body .card-text {
+    margin-bottom: 30px;
+}
+.laptop-section .card-body button {
+    margin: 10px 0 20px;
+}
