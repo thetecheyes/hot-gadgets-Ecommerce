@@ -22,6 +22,7 @@ Date: 24/02/2020
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/reponsive.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -31,7 +32,7 @@ Date: 24/02/2020
     <!-- Navbar Section -->
 
     <section class="container navbar-section">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Logo">
             </a>
@@ -39,22 +40,19 @@ Date: 24/02/2020
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#product">Product</a>
+                        <a class="nav-link" href="#smartphone">Smartphone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#laptop">Laptop</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#categories">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -74,7 +72,7 @@ Date: 24/02/2020
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="10000">
                         <div class="row align-items-center">
-                            <div class="col-md-5">
+                            <div class="col-xs-12 col-md-5">
                                 <div class="banner-text">
                                     <h1>Mackbook Pro</h1>
                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
@@ -83,7 +81,7 @@ Date: 24/02/2020
                                     <button class="btn btn-custom">BUY NOW ➜</button>
                                 </div>
                             </div>
-                            <div class="col-md-1">
+                            <div class="d-none d-sm-none d-md-block col-md-1">
                                 <img class="img-fluid best-text" src="images/banner/best-text.png" alt="">
                             </div>
                             <div class="col-md-6">
@@ -94,7 +92,7 @@ Date: 24/02/2020
                     </div>
                     <div class="carousel-item" data-interval="10000">
                         <div class="row align-items-center">
-                            <div class="col-md-5">
+                            <div class="col-xs-12 col-md-5">
                                 <div class="banner-text">
                                     <h1>Google Home</h1>
                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
@@ -103,7 +101,7 @@ Date: 24/02/2020
                                     <button class="btn btn-custom">BUY NOW ➜</button>
                                 </div>
                             </div>
-                            <div class="col-md-1">
+                            <div class="d-none d-sm-none d-md-block col-md-1">
                                 <img class="img-fluid best-text" src="images/banner/best-text.png" alt="">
                             </div>
                             <div class="col-md-6">
@@ -114,7 +112,7 @@ Date: 24/02/2020
                     </div>
                     <div class="carousel-item" data-interval="10000">
                         <div class="row align-items-center">
-                            <div class="col-md-5">
+                            <div class="col-xs-12 col-md-5">
                                 <div class="banner-text">
                                     <h1>JBL Xtreme 2</h1>
                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
@@ -123,7 +121,7 @@ Date: 24/02/2020
                                     <button class="btn btn-custom">BUY NOW ➜</button>
                                 </div>
                             </div>
-                            <div class="col-md-1">
+                            <div class="d-none d-sm-none d-md-block col-md-1">
                                 <img class="img-fluid best-text" src="images/banner/best-text.png" alt="">
                             </div>
                             <div class="col-md-6">
@@ -139,7 +137,7 @@ Date: 24/02/2020
 
     <!-- Smartphone Section -->
 
-    <section id="product" class="smartphone-section">
+    <section id="smartphone" class="smartphone-section">
         <div class="container">
             <div class="smartphone-title d-flex justify-content-between align-items-center">
                 <h3>Smartphone</h3>
@@ -179,7 +177,7 @@ Date: 24/02/2020
 
     <!-- Laptop Section -->
 
-    <section id="about" class="laptop-section">
+    <section id="laptop" class="laptop-section">
         <div class="container">
             <div class="laptop-title d-flex justify-content-between align-items-center">
                 <h3>Laptop</h3>
@@ -221,37 +219,53 @@ Date: 24/02/2020
 
     <section id="categories" class="categories-section">
         <div class="container">
+
+            <!-- Categories Header -->
             <div class="categories-title">
                 <h2 class="text-center">Categories</h2>
                 <span></span>
             </div>
+
+            <!-- Categories Details -->
             <div class="row">
-                <div class="col-md-3 d-flex align-items-center justify-content-end">
-                    <div class="cat-box">
+                <div class="col-sm-4 col-md-3 cat-bag">
+                    <div class="cat-box bag">
                         <img src="images/Categories/bag.png" alt="Bag">
                         <h5>Bag</h6>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="cat-box">
+                <div class="col-sm-4 col-md-3">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="cat-box perfume">
                             <img src="images/Categories/perfume.png" alt="Perfume">
                             <h5>Perfume</h6>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row align-items-center justify-content-center">
                         <div class="cat-box shoe">
                             <img src="images/Categories/shoe.png" alt="Shoe">
                             <h5>Shoes</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-sm-4 col-md-6 d-flex align-items-center justify-content-center">
                     <img class="img-fluid pic-shake" src="images/Categories/pale-order.png" alt="Order">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer - Copyright Section -->
+
+    <footer class="footer-section">
+        <div class="container ">
+            <p class="text-center">© <span class="color-style">Hot Gadgets Ecommerce</span> - 2020, Learning is fun with
+                <a class="color-style" href="https://www.programming-hero.com/">Programming Hero</a> Team.
+            </p>
+        </div>
+    </footer>
+
+
 
 
 

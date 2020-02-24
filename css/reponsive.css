@@ -1,0 +1,40 @@
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) { 
+
+    .cat-bag {
+        justify-content: center;
+    }
+
+ }
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .cat-box img {
+        width: 50px;
+    }
+    .cat-box h5 {
+        font-size: 17px;
+    }
+    .cat-box {
+        width: 160px;
+    }
+
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .cat-box {
+        width: 160px;
+    }
+    .cat-box.shoe {
+        padding: 40px 63px;
+    }
+
+}

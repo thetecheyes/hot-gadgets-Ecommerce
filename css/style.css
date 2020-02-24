@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0; 
     font-family: 'Poppins', serif;
     color: #707070;
     line-height: 1.5em;
@@ -32,7 +32,7 @@ a.see-all {
 /* Navbar Section */
 
 .navbar-section {
-    margin-top: 30px;
+    padding-top: 10px;
 }
 .navbar-section .navbar-nav .nav-item {
     padding: 0 8px;
@@ -45,7 +45,7 @@ a.see-all {
     font-weight: 500;
     font-size: 15px;
 }
-.navbar-section .navbar-nav a:hover {
+.navbar-section .navbar-nav a.nav-link:hover {
     color: #FF9D00;
 }
 
@@ -56,7 +56,6 @@ a.see-all {
 }
 .carousel {
     padding: 0 0 50px 20px;
-    /* z-index: 1; */
 }
 .carousel-indicators .active{
     background-image: linear-gradient(to right, #FF9C35, #FFD019);
@@ -182,9 +181,8 @@ a.see-all {
     border: 1px solid transparent;
     box-shadow: 0px 5px 30px #00000020;
     border-radius: 0 20px 0 20px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     margin-left: 20px;
-    height: 250px;
     transition: all 0.3s ease;
 }
 .cat-box:hover {
@@ -194,6 +192,10 @@ a.see-all {
 }
 .cat-box h5 {
     margin-top: 30px;
+}
+.cat-bag {
+    display: flex;
+    align-items: center;
 }
 .cat-box.shoe {
     margin-bottom: 0;
@@ -205,4 +207,20 @@ a.see-all {
     animation-name: pic-shake;
     animation-duration: 8s;
     animation-iteration-count: infinite;
+}
+
+
+/* Footer Section */
+
+.footer-section {
+    padding: 10px 0;
+}
+.footer-section p {
+    margin: 50px 0 0 ;
+}
+.color-style {
+    color: #1E90FF;
+}
+a.color-style {
+    text-decoration: none;
 }
